@@ -1,0 +1,13 @@
+{
+  "_说明": "通用 MCP 客户端配置模板（Claude Desktop / Cursor / Cline / Windsurf / Chatter 等支持 MCP 的客户端）。把 <PROJECT> 替换为项目绝对路径；Windows 路径中的反斜杠需写成双反斜杠。只需把 mcpServers 内容合并到客户端原有的配置文件中，不要覆盖其他服务。",
+  "mcpServers": {
+    "eternal-memories": {
+      "command": "python",
+      "args": ["<PROJECT>/mcp_server.py"],
+      "env": {
+        "EM_DATA_DIR": "<PROJECT>/data",
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  }
+}
